@@ -52,7 +52,7 @@ class _RegisterState extends State<Register> {
                     validator: (value) {
                       bool emailValid = RegExp(
                               r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-                          .hasMatch(emailController!.text);
+                          .hasMatch(emailController.text);
                       if (!emailValid) {
                         return "Please re-enter your email";
                       }
